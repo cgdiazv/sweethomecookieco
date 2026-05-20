@@ -1,11 +1,6 @@
 import Link from 'next/link';
 
 export default function Footer() {
-  const legalLinks = [
-    { href: '/privacy', label: 'Privacy Policy' },
-    { href: '/terms', label: 'Terms of Service' },
-  ];
-
   return (
     <footer className="bg-[#12967b] text-white text-center relative overflow-hidden w-full">
       {/* Background Subtle Pattern Overlay */}
@@ -34,15 +29,14 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Sweet Home Cookie Co. All rights reserved.
           </p>
           <div className="flex gap-4 text-sm text-white/70">
-            {legalLinks.map((link) => (
-              <Link 
-                key={link.href}
-                href={link.href} 
-                className="hover:text-white transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
+            <a 
+              href="https://indevasa.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+            >
+              Indeva Websites
+            </a>
           </div>
         </div>
       </div>
