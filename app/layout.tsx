@@ -1,5 +1,6 @@
 import { Roboto } from 'next/font/google';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import './globals.css';
 
 const roboto = Roboto({
@@ -25,7 +26,7 @@ export default function RootLayout({
         <main className="flex-grow">
           {children}
         </main>
-        {/* Footer layout goes here */}
+        <Footer />
       </body>
     </html>
   );

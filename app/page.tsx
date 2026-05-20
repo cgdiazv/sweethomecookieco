@@ -146,25 +146,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. FOOTER CALL TO ACTION */}
-      <section className="py-16 bg-[#12967b] text-white text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(#16B595_1px,transparent_1px)] [background-size:16px_16px] opacity-10"></div>
-        <div className="max-w-4xl mx-auto px-4 relative z-10 space-y-6">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Ready to sweeten up your next event?</h2>
-          <p className="text-white/70 max-w-md mx-auto font-light text-sm sm:text-base">
-            Whether it is a birthday, corporate gathering, or holiday celebration, we can design the perfect set.
-          </p>
-          <div className="pt-2">
-            <Link 
-              href="/order" 
-              className="inline-block border-2 border-white hover:border-[#FCD4D4] bg-[#12967b] hover:bg-[#FCD4D4] text-white hover:text-[#333333] px-8 py-3.5 rounded-full font-bold shadow-md transition-colors"
-            >
-              Place Your Order Request
-            </Link>
-          </div>
-        </div>
-      </section>
-
     </div>
   );
 }
